@@ -37,6 +37,7 @@ alphabet.split('').forEach(letter => {
     } else {
       failedAttempts.push(letter);
       document.getElementById("failedAttempts").innerText = "Intentos fallidos: " + failedAttempts.join(', ');
+      document.getElementById("hangmanImage").src = "progresion " + (failedAttempts.length + 1) + ".png";
       if (failedAttempts.length >= 7) {
         losses++;
         document.getElementById("gameStatus").innerText = "Has perdido. La palabra era: " + word;
@@ -59,6 +60,7 @@ document.getElementById("newWordButton").addEventListener('click', function() {
   document.getElementById("wordToGuess").innerText = guessedLetters.join(' ');
   document.getElementById("failedAttempts").innerText = "";
   document.getElementById("gameStatus").innerText = "";
+  document.getElementById("hangmanImage").src = "progresion 1.png";
   keyboardButtons.forEach(b => {
     b.disabled = false; // Reactivar todos los botones del teclado
     b.textContent = b.textContent.toLowerCase(); // Restaurar el texto del botón a minúsculas

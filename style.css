@@ -1,3 +1,45 @@
 .keyboard-button {
     margin: 5px;
+    background-color: greenyellow;
+    color:gray;
+    font-size: 18px;
+    padding: 20px 20px;
+    margin: 12px;
 }
+
+.newword-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:gray;
+}
+
+body {
+    background-color: gray;
+}
+
+.custom-font-tittle {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: greenyellow;
+}
+
+.custom-font-subtittle {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: greenyellow;
+}
+
+.custom-font-text {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: greenyellow;
+}
+
+.moverimg {
+    text-align: right;
+  }
+  

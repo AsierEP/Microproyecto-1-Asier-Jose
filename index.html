@@ -3,22 +3,41 @@
     <head>
         <meta charset="UFT-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./foto ahorcado.jpg">
         <title>El ahorcado</title>
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-    <h1>El ahoracdo</h1>
+        <section>
+            <div class="custom-font-tittle">
+            <h1>El ahorcado</h1>
+            </div>
+            <div class="custom-font-subtittle">
+            <h2>Presentado por Asier Errasti y Jose Francisco</h2>
+            </div>
+        </section>
+        <section>
+            <div class="custom-font-text">
+            <p id="wordToGuess"></p>
+            <p id="failedAttempts"></p>
+            <p id="gameStatus"></p>
+            <p id="score"></p>
+            </div>
 
-    <p id="wordToGuess"></p>
-    <p id="failedAttempts"></p>
-    <p id="gameStatus"></p>
-    <p id="score"></p>
+            <div class="newword-button">
+            <button id="newWordButton" disabled>Nueva Palabra</button>
+            </div>
+            <div id="keyboard"></div>   
+            <img src="./unimet logo.png" alt="Logo unimet">
 
-    <button id="newWordButton" disabled>Nueva Palabra</button>
-    
-    <div id="keyboard"></div>    
+            <div class="moverimg">
+            <img src="./perro fiesta.jpg" alt="Perro fiesta">
+            </div>
+            <img id="imageDisplay" src="" alt="Image Display">
+            <img id="hangmanImage" src="progresion 1.png" alt="Hangman Progression">
+        </section>
 
-<div id="keyboard"></div>
-<script src="./script.js"></script>
-</body>
+        <div id="keyboard"></div>
+    <script src="./script.js"></script>
+    </body>
 </html>
